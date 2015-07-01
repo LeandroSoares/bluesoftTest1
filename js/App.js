@@ -240,14 +240,17 @@ iBuy.controller('mainController', function($scope, $http, $rootScope, $location)
 
         return total;
     }
-    $http.get('/data/data.json')
-        .success(function(data, status, headers, config) {
-            $scope.loginData = data;
-        })
-        .error(function(data, status, headers, config) {
-            console.log(data)
-        });
-    $scope.user = {}
+    // $http.get('/data/data.json')
+    //     .success(function(data, status, headers, config) {
+    //         $scope.loginData = data;
+    //     })
+    //     .error(function(data, status, headers, config) {
+    //         console.log(data)
+    //     });
+    
+    $scope.loginData={ "user": "test", "pass": "1234"};
+
+    $scope.user =  {}
     $scope.$back = function() {
         window.history.back();
     };
