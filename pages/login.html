@@ -1,0 +1,15 @@
+<div class='login' id='login-screen' ng-class='login.class'>
+    <div class='box centered-logo-and-form'>
+        <div class='row'>
+            <img src="img/ibuy-logo-4dark-bg.png" class='img-responsive'>
+        </div>
+        <form class='form-group row' ng-submit='login.$validateUser()'>
+            <div class='row texts'>
+                <input id='username' type='text' class="form-control input-lg" placeholder="Usuário" ng-model="user.name">
+                <input id='password' type='password' class="form-control input-lg" placeholder="Senha" ng-model="user.pass">
+            </div>
+        <div ng-if='login.wrong' class='row text-danger bg-danger feedback-text' ng-model='login.errorMessage'>{{login.errorMessage}}</div>
+            <input class='btn' type='submit' value='Login'>
+        </form>
+    </div>
+</div>

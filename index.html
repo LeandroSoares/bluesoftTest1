@@ -1,1 +1,15 @@
-Hello world
+<!doctype html>
+<html ng-app='iBuy'>
+<head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="bower_components/angular.js/angular.js"></script>
+        <script src="bower_components/angular.js/angular-route.js"></script>
+        <script type="text/javascript" src='js/App.js'></script>
+        <title>iBuy</title>
+</head>
+    <body ng-controller="mainController">
+        <div id='menu' ng-include='"pages/menu.html"'></div>
+        <div id="main" ng-view ng-class='menuStatus'></div>
+    </body>
+</html>

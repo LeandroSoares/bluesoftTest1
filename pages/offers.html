@@ -1,0 +1,26 @@
+<!-- Contact.html -->
+<div class='Offers'>
+    <header class='offers'> 
+        <h2>{{page.name}}</h2>
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <a class="btn btn-back menu-right" ng-click='$back()'></a>
+    </header>
+    <div style='height: {{$fullScreenMinusHeader}}' class='content'> 
+    <ul class='tableview-images productList'>
+        <li ng-repeat='iten in Ofertas'>
+            <span class='left-btn icon-remove-item' ng-click="removeItem(iten)"></span>
+            <div class='center-container'>
+                <img ng-src="{{iten.img}}">
+                <span class='star' ng-class="isFav(iten)" ng-click="favItem(iten)"></span>
+                <span class='itemDesc'> {{iten.name+': '}}{{iten.cost|currency}} </span>
+                <span class='inCart'> no carrinho: {{cartItem[iten.key_name].qty||0}}</span>
+            </div>
+            <span class='right-btn icon-add-item' ng-click="addItem(iten)"></span>
+        </li>
+        <p ng-if='Ofertas.length==0' class='no-offers'>
+            Estamos sem ofertas no momento.
+        </p>
+    </ul>
+</div>
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>

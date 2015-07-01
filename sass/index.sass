@@ -1,0 +1,514 @@
+// $appColorBase: #c97a32
+@import "compass/reset"
+@import "compass/css3"
+@import "droidsans_regular_macroman/droid_sansregular.css"
+// $appColorBase: #ffa13f
+$appColorBase: #FF8C14
+$btnColor: #3691B5
+$orange1: #FF8C14
+$productsOrange: #ff6700
+
+//Fonts
+$fontFamilyText: 'droid_sansregular',
+
+// Colors
+$colors-red: #ee4f30
+$colors-dark-orange: #ff6700
+$colors-orange: #f18130
+$colors-light-orange: #ffa13f
+$colors-dark-blue: #0099b9
+$colors-blue: #44a6b9
+$colors-light-blue: #59ceca
+
+$colors-grey: #999
+* 
+    font-family: 'droid_sansregular'!important
+    +box-sizing(border-box)
+
+body
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+.home 
+    background-color: $colors-orange
+.favorites 
+    background-color: $colors-light-orange
+.products
+    background-color: $colors-dark-blue
+.cart 
+    background-color: $colors-dark-orange
+.payout
+    background-color: $colors-light-blue
+.offers
+    background-color: $colors-red
+.config
+    background-color: $colors-grey
+.menu-right 
+    right: 0
+.menu-right-right
+    right: 55px
+.menu-left 
+    left: 0
+
+
+$headerHeight: 50px
+header
+    width: 100%
+    height: $headerHeight
+    margin: 0!important
+    padding: 0!important
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 10
+    +box-shadow(0px 0px 8px rgba(0,0,0,0.5))
+    a
+        width: 50px
+        height: 50px
+        position: absolute
+    img
+        display: inline
+        height: 30px
+        margin-bottom: -6px
+    h2
+        text-align: center
+        margin: 0
+        padding: 0
+        color: white
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 50px
+        line-height: 50px
+        font-size: 24px
+
+    .col-xs-2, .col-md-1,.col-xs-8, .col-md-10,
+        margin: 0
+        padding: 0
+.content
+    position: absolute
+    top: $headerHeight
+    width: 100%
+
+$menuSize: 260px
+#main
+    background-color: white
+    overflow: hidden
+    position: absolute
+    width: 100%
+    height: 100%
+    +transition(left 500ms)
+    left: 0
+    ul
+        width: 100%
+        height: 100%
+        overflow: auto
+        li
+            position: relative
+    +box-shadow(0px 0px 8px rgba(0,0,0,1))
+    &.menu-open
+        +transition(left 500ms)
+        left: $menuSize
+        
+        display: block
+        #blackOver
+            display: block
+            cursor: pointer
+            +transition(opacity 500ms)
+            opacity: 1
+        
+#blackOver
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.5)
+    width: 100%
+    height: 100%
+    display: none
+    opacity: 0
+    z-index: 999
+
+#menu
+    position: absolute
+    width: $menuSize
+    height: 100%
+    background-color: $colors-dark-blue
+    background-image: url(../img/pattern.png)
+    background-size: 100%
+    img
+        width: 80%
+        display: inline-block
+    ul
+        height: 100%
+    li
+        position: relative
+        text-align: center
+        height: 14.2%
+        
+        color: white
+        font-size: 22px
+        a
+            color: white
+            text-decoration: none
+            display: table
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            margin-left: 20px
+            &:visited
+                color: white
+.displayNone
+    display: none
+
+.transit-top
+    +transition(top 1s)
+
+.login
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: $colors-dark-blue
+    background-image: url(../img/pattern.png)
+    background-size: 50%
+    &.off
+        top: 100%
+    .box
+        display: table
+        width: 90%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+    .centered-logo-and-form
+        position: absolute
+        display: table
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        margin: auto
+        text-align: center
+        img
+            width: 60%
+
+            &.img-responsive
+                display: inline-block
+                width: 50%
+    .feedback-text
+        text-align: center
+        margin-bottom: 12px
+        border-radius: 4px
+    form
+        text-align: center
+        margin-top: 20px
+
+        .texts
+            margin-bottom: 20px
+            height: 100px
+        input
+            outline: none
+            &:focus
+                outline: none
+            &[type="submit"]
+                min-height: 45px
+                font-size: 20px
+                text-align: center
+                background-color: #f18130
+                border: none
+                border-radius: 50px
+                color: white
+                padding: 10px 30px
+                min-width: 230px
+                &:focus
+                    box-shadow: none
+            &.input-lg
+                box-shadow: 0px 1px 4px rgba(0,0,0,0.5)
+                border-radius: 50px
+                outline: 0
+                text-align: center
+                width: 50%
+                border: none
+                height: 50%
+                display: inline-block
+                font-size: 22px
+                &:focus
+                    border: 0
+                    box-shadow: 0px 1px 4px rgba(0,0,0,0.5)
+
+            &.input-lg:last-child
+                margin-top: 6px 
+
+li
+    list-style: none
+.btn
+    cursor: pointer
+.icon-go
+    background-image: url(../img/btn-go.png)
+    background-size: 20px 30px
+    background-repeat: no-repeat
+    background-position: center
+.icon-right-side
+    background-position: 95% 50%
+
+%menu-buttons
+    width: 50px
+    height: 50px
+    background-position: center
+    background-repeat: no-repeat
+.btn-back
+    @extend %menu-buttons
+    background-image: url(../img/btn-back.png)
+    background-size: 20px 30px
+.btn-menu
+    @extend %menu-buttons
+    background-image: url(../img/btn-menu.png)
+    background-size: 30px
+.btn-cart
+    @extend %menu-buttons
+    background-image: url(../img/white-cart.png)
+    background-size: 40px
+%icon-size
+    width: 50px
+    height: 42px
+    position: relative
+    display: block
+.icon-remove-item
+    @extend %icon-size
+    background-image: url(../img/remove-cart-icon.png)
+.icon-add-item
+    @extend %icon-size
+    background-image: url(../img/add-cart-icon.png)
+
+.tableview-images
+    margin: 0
+    padding: 0
+    .left-btn
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        margin: auto 10px
+    .right-btn
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto 10px
+    .center-container
+        position: relative
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        margin: auto
+        display: table
+        height: 100%
+        width: 50%
+        min-width: 200px
+        
+    .no-itens
+        cursor: pointer
+        text-align: center
+        color: white
+        background-color: $colors-dark-blue
+        span
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            display: table
+            width: 90%
+            right: 0
+    img
+        max-width: 100px
+        max-height: 100px
+        border-radius: 100%
+        padding: 4px
+        background-color: white
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+        border: solid 2px
+    .itemDesc
+        position: absolute
+        display: table
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 104px
+        margin: auto
+    li
+        position: relative
+        border-bottom: solid 2px
+        height: 140px
+        &:last-child
+            border-bottom: none
+    .inCart
+        position: absolute
+        bottom: 20px
+        right: 0
+#search-engine
+    background-color: $colors-blue
+    height: 46px
+    width: 100%
+    input
+        border-radius: 100px
+        width: 90%
+        height: 30px
+        margin: 8px 5%
+        border: none
+        text-align: center
+    .lupa
+        background-image: url(../img/lupa.png)
+        width: 24px
+        height: 24px
+        position: absolute
+        background-size: contain
+        top: 12px
+        right: 6%
+.Home
+    li 
+        height: 25%
+
+        >a
+            text-decoration: none
+            color: white
+            position: absolute
+            display: table
+            margin: auto
+            top: 0
+            bottom: 0
+            left: 40px
+            font-size: 30px
+            &:visited
+                color: white
+.Offers
+    .tableview-images
+        img
+            border-color: $colors-red
+    li
+        border-bottom-color: $colors-red
+    .no-offers
+        margin-top: 50px
+        text-align: center
+.Fav
+    .tableview-images
+        img
+            border-color: $colors-light-orange
+    li
+        border-bottom-color: $colors-light-orange
+.Cart
+    .tableview-images
+        img
+            border-color: $colors-dark-orange
+    li
+        border-bottom-color: $colors-dark-orange
+    $size1: 60px
+    $size2: 100px
+    .bottom-container
+        height: $size1 + $size2
+        position: absolute
+        bottom: 0
+        width: 100%
+        .buy-total
+            background-color: $colors-dark-blue
+            width: 100%
+            height: $size1
+            text-align: center
+            line-height: $size1
+            font-size: 26px
+            color: white
+        .buy-all
+            display: block
+            color: white
+            background-color: $colors-light-blue
+            width: 100%
+            height: $size2
+            text-align: center
+            line-height: $size2
+            font-size: 30px
+            color: white
+            background-position: 95% 50%
+            text-decoration: none
+
+.products-cell
+    .star
+        position: absolute
+        width: 43px
+        height: 40px
+        background-size: contain
+        background-repeat: no-repeat
+        top: 6px
+        left: 60px
+        &.on 
+            background-image: url(../img/icon-star-on.png)
+        &.off 
+            background-image: url(../img/icon-star-off.png)
+.Products
+    .tableview-images
+        img
+            border-color: $colors-dark-blue
+        .star
+            position: absolute
+            width: 43px
+            height: 40px
+            background-size: contain
+            background-repeat: no-repeat
+            top: 6px
+            left: 60px
+            &.on 
+                background-image: url(../img/icon-star-on.png)
+            &.off 
+                background-image: url(../img/icon-star-off.png)
+        li
+            border-bottom-color: $colors-blue
+
+.Payout
+    p
+        height: 60px
+        font-size: 20px
+        text-align: center
+        line-height: 60px
+    .cards
+        height: 50px
+        background-color: $colors-dark-blue
+        font-size: 20px
+        text-align: center
+        line-height: 50px
+        color: white
+    ul 
+        text-align: center
+        li
+            display: inline-block
+            padding: 8px
+            width: 24%
+
+.Config
+    .content
+        overflow: auto
+        >*
+            height: 50px
+            text-align: center
+            line-height: 50px
+    .loggout
+        background-color: $colors-red
+    h3, h4
+        color: white
+    h3
+        background-color: $colors-blue
+    h4
+        background-color: $colors-light-blue
+
+.text-danger
+    background-color: lightpink
+    color: crimson
+    padding: 4px
+    border-radius: 50px

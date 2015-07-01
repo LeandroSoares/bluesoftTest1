@@ -1,0 +1,20 @@
+<!-- home.html -->
+<div class='Payout'>
+    <header class='payout'> 
+        <h2>{{page.name}}</h2> 
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <a class="btn btn-back menu-right" ng-click='$back()'></a>
+    </header>
+    <div style='height: {{$fullScreenMinusHeader}}' class='content'> 
+        <p>Total: {{total()|currency}}</p>
+    <div class='cards'>Formas de pagamento</div>
+    <ul>
+        <li ng-repeat='card in cards'>
+            <img class='btn' ng-src="{{card.img}}">
+        </li>
+    </ul>
+    </div>
+   
+
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>

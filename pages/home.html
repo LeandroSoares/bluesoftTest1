@@ -1,0 +1,17 @@
+<!-- home.html -->
+<div class='Home'>
+    <header class='home'> 
+        <h2><img src="img/ibuy-logo-4dark-bg-blue.png"></h2> 
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <!-- <a class="btn btn-back menu-right" ng-click='$back()'></a> -->
+    </header>
+    <div style='height: {{$fullScreenMinusHeader}}' class='content'> 
+        <ul>
+            <li class='btn products' ng-click='goTo("/produtos")'><a> Produtos</a></li>
+            <li class='btn offers' ng-click='goTo("/ofertas")'><a> Ofertas</a></li>
+            <li class='btn favorites' ng-click='goTo("/favoritos")'><a> Favoritos</a></li>
+            <li class='btn cart' ng-click='goTo("/carrinho")'><a> Carrinho</a></li>
+        </ul>
+    </div>
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>

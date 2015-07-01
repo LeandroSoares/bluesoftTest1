@@ -1,0 +1,33 @@
+<!-- Cart.html -->
+<div class='Cart' >
+    <header class='cart'> 
+        <h2>{{page.name}}</h2> 
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <a class="btn btn-back menu-right" ng-click='$back()'></a>
+    </header>
+    
+    <div style='height: {{page.middleSize}}' class='content'> 
+    <ul class='tableview-images productList'>
+        <li ng-repeat='iten in cart'>
+            <span class='btn left-btn icon-remove-item' ng-click="removeItem(iten)"></span>
+            <div class='center-container'>
+                <img ng-src="{{iten.img}}">
+                <span class='star' ng-class="isFav(iten)" ng-click="favItem(iten)"></span>
+                <span class='itemDesc'> {{iten.name+': '}}{{iten.cost|currency}}</span>
+                <span class='inCart'>qty {{iten.qty}} total: {{iten.cost*iten.qty|currency}}</span>
+            </div>
+            <span class='btn right-btn icon-add-item' ng-click="addItem(iten)"></span>
+        </li>
+        <li ng-if='cart.length==0' ng-click='goTo("/produtos")' class='no-itens'>
+            <span>
+                Sem itens no carrinho!!!
+            </span>
+         </li>
+    </ul>
+ </div>
+ <div class='bottom-container'>
+    <div class='buy-total'>Total: {{total()|currency}}</div>
+    <a class='btn buy-all icon-go' href='#pagamento'>Comprar Tudo!</a>
+ </div>
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>

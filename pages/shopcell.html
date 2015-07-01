@@ -1,0 +1,10 @@
+<span class='btn left-btn icon-remove-item' ng-click="removeItem(iten)"></span>
+<div class='center-container'>
+    <span ng-click="favItem(iten)">
+        <img ng-src="{{iten.img}}">
+        <span class='star' ng-class="isFav(iten)"></span>
+    </span>
+    <span class='itemDesc'> {{iten.name+': '}}{{iten.cost|currency}} </span>
+    <span class='inCart'> {{page.inCartText}} {{cartItem[iten.key_name].qty||0}}</span>
+</div>
+<span class='btn right-btn icon-add-item' ng-click="addItem(iten)"></span>

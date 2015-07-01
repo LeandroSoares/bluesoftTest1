@@ -1,0 +1,17 @@
+<!-- Cart.html -->
+<div class='Fav'>
+    <header class='favorites'> 
+        <h2>{{page.name}}</h2> 
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <a class="btn btn-back menu-right" ng-click='$back()'></a>
+    </header>
+    <div style='height: {{$fullScreenMinusHeader}}' class='content'> 
+    <ul class='tableview-images productList'>
+        <li class='table-cell products-cell'ng-repeat='iten in fav' ng-include='"pages/shopcell.html"'> </li>
+    </ul>
+    <div>Total: {{total()|currency}}</div>
+    <a class='btn btn-default'href='#shop'>Continuar comprando</a>
+   <a class='btn btn-primary' href='#/'>Finalizar compra!</a>
+   </div>
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>

@@ -1,0 +1,781 @@
+@import url(droidsans_regular_macroman/droid_sansregular.css);
+/* line 5, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 24, ../sass/index.sass */
+* {
+  font-family: "droid_sansregular" !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 28, ../sass/index.sass */
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 33, ../sass/index.sass */
+.home {
+  background-color: #f18130;
+}
+
+/* line 35, ../sass/index.sass */
+.favorites {
+  background-color: #ffa13f;
+}
+
+/* line 37, ../sass/index.sass */
+.products {
+  background-color: #0099b9;
+}
+
+/* line 39, ../sass/index.sass */
+.cart {
+  background-color: #ff6700;
+}
+
+/* line 41, ../sass/index.sass */
+.payout {
+  background-color: #59ceca;
+}
+
+/* line 43, ../sass/index.sass */
+.offers {
+  background-color: #ee4f30;
+}
+
+/* line 45, ../sass/index.sass */
+.config {
+  background-color: #999;
+}
+
+/* line 47, ../sass/index.sass */
+.menu-right {
+  right: 0;
+}
+
+/* line 49, ../sass/index.sass */
+.menu-right-right {
+  right: 55px;
+}
+
+/* line 51, ../sass/index.sass */
+.menu-left {
+  left: 0;
+}
+
+/* line 56, ../sass/index.sass */
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+/* line 66, ../sass/index.sass */
+header a {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+/* line 70, ../sass/index.sass */
+header img {
+  display: inline;
+  height: 30px;
+  margin-bottom: -6px;
+}
+/* line 74, ../sass/index.sass */
+header h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+}
+/* line 87, ../sass/index.sass */
+header .col-xs-2, header .col-md-1, header .col-xs-8, header .col-md-10 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 90, ../sass/index.sass */
+.content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+/* line 96, ../sass/index.sass */
+#main {
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-transition: left 500ms;
+  -o-transition: left 500ms;
+  -webkit-transition: left 500ms;
+  transition: left 500ms;
+  left: 0;
+  -moz-box-shadow: 0px 0px 8px black;
+  -webkit-box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 8px black;
+}
+/* line 104, ../sass/index.sass */
+#main ul {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+/* line 108, ../sass/index.sass */
+#main ul li {
+  position: relative;
+}
+/* line 111, ../sass/index.sass */
+#main.menu-open {
+  -moz-transition: left 500ms;
+  -o-transition: left 500ms;
+  -webkit-transition: left 500ms;
+  transition: left 500ms;
+  left: 260px;
+  display: block;
+}
+/* line 116, ../sass/index.sass */
+#main.menu-open #blackOver {
+  display: block;
+  cursor: pointer;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  opacity: 1;
+}
+
+/* line 122, ../sass/index.sass */
+#blackOver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  z-index: 999;
+}
+
+/* line 133, ../sass/index.sass */
+#menu {
+  position: absolute;
+  width: 260px;
+  height: 100%;
+  background-color: #0099b9;
+  background-image: url(../img/pattern.png);
+  background-size: 100%;
+}
+/* line 140, ../sass/index.sass */
+#menu img {
+  width: 80%;
+  display: inline-block;
+}
+/* line 143, ../sass/index.sass */
+#menu ul {
+  height: 100%;
+}
+/* line 145, ../sass/index.sass */
+#menu li {
+  position: relative;
+  text-align: center;
+  height: 14.2%;
+  color: white;
+  font-size: 22px;
+}
+/* line 152, ../sass/index.sass */
+#menu li a {
+  color: white;
+  text-decoration: none;
+  display: table;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 20px;
+}
+/* line 161, ../sass/index.sass */
+#menu li a:visited {
+  color: white;
+}
+
+/* line 163, ../sass/index.sass */
+.displayNone {
+  display: none;
+}
+
+/* line 166, ../sass/index.sass */
+.transit-top {
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
+  -webkit-transition: top 1s;
+  transition: top 1s;
+}
+
+/* line 169, ../sass/index.sass */
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0099b9;
+  background-image: url(../img/pattern.png);
+  background-size: 50%;
+}
+/* line 178, ../sass/index.sass */
+.login.off {
+  top: 100%;
+}
+/* line 180, ../sass/index.sass */
+.login .box {
+  display: table;
+  width: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 188, ../sass/index.sass */
+.login .centered-logo-and-form {
+  position: absolute;
+  display: table;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+/* line 197, ../sass/index.sass */
+.login .centered-logo-and-form img {
+  width: 60%;
+}
+/* line 200, ../sass/index.sass */
+.login .centered-logo-and-form img.img-responsive {
+  display: inline-block;
+  width: 50%;
+}
+/* line 203, ../sass/index.sass */
+.login .feedback-text {
+  text-align: center;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+/* line 207, ../sass/index.sass */
+.login form {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 211, ../sass/index.sass */
+.login form .texts {
+  margin-bottom: 20px;
+  height: 100px;
+}
+/* line 214, ../sass/index.sass */
+.login form input {
+  outline: none;
+}
+/* line 216, ../sass/index.sass */
+.login form input:focus {
+  outline: none;
+}
+/* line 218, ../sass/index.sass */
+.login form input[type="submit"] {
+  min-height: 45px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f18130;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 30px;
+  min-width: 230px;
+}
+/* line 228, ../sass/index.sass */
+.login form input[type="submit"]:focus {
+  box-shadow: none;
+}
+/* line 230, ../sass/index.sass */
+.login form input.input-lg {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  outline: 0;
+  text-align: center;
+  width: 50%;
+  border: none;
+  height: 50%;
+  display: inline-block;
+  font-size: 22px;
+}
+/* line 240, ../sass/index.sass */
+.login form input.input-lg:focus {
+  border: 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 244, ../sass/index.sass */
+.login form input.input-lg:last-child {
+  margin-top: 6px;
+}
+
+/* line 247, ../sass/index.sass */
+li {
+  list-style: none;
+}
+
+/* line 249, ../sass/index.sass */
+.btn {
+  cursor: pointer;
+}
+
+/* line 251, ../sass/index.sass */
+.icon-go {
+  background-image: url(../img/btn-go.png);
+  background-size: 20px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 256, ../sass/index.sass */
+.icon-right-side {
+  background-position: 95% 50%;
+}
+
+/* line 259, ../sass/index.sass */
+.btn-back, .btn-menu, .btn-cart {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 264, ../sass/index.sass */
+.btn-back {
+  background-image: url(../img/btn-back.png);
+  background-size: 20px 30px;
+}
+
+/* line 268, ../sass/index.sass */
+.btn-menu {
+  background-image: url(../img/btn-menu.png);
+  background-size: 30px;
+}
+
+/* line 272, ../sass/index.sass */
+.btn-cart {
+  background-image: url(../img/white-cart.png);
+  background-size: 40px;
+}
+
+/* line 276, ../sass/index.sass */
+.icon-remove-item, .icon-add-item {
+  width: 50px;
+  height: 42px;
+  position: relative;
+  display: block;
+}
+
+/* line 281, ../sass/index.sass */
+.icon-remove-item {
+  background-image: url(../img/remove-cart-icon.png);
+}
+
+/* line 284, ../sass/index.sass */
+.icon-add-item {
+  background-image: url(../img/add-cart-icon.png);
+}
+
+/* line 288, ../sass/index.sass */
+.tableview-images {
+  margin: 0;
+  padding: 0;
+}
+/* line 291, ../sass/index.sass */
+.tableview-images .left-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 10px;
+}
+/* line 297, ../sass/index.sass */
+.tableview-images .right-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 10px;
+}
+/* line 303, ../sass/index.sass */
+.tableview-images .center-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: table;
+  height: 100%;
+  width: 50%;
+  min-width: 200px;
+}
+/* line 315, ../sass/index.sass */
+.tableview-images .no-itens {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #0099b9;
+}
+/* line 320, ../sass/index.sass */
+.tableview-images .no-itens span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: table;
+  width: 90%;
+  right: 0;
+}
+/* line 329, ../sass/index.sass */
+.tableview-images img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 100%;
+  padding: 4px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: solid 2px;
+}
+/* line 340, ../sass/index.sass */
+.tableview-images .itemDesc {
+  position: absolute;
+  display: table;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 104px;
+  margin: auto;
+}
+/* line 348, ../sass/index.sass */
+.tableview-images li {
+  position: relative;
+  border-bottom: solid 2px;
+  height: 140px;
+}
+/* line 352, ../sass/index.sass */
+.tableview-images li:last-child {
+  border-bottom: none;
+}
+/* line 354, ../sass/index.sass */
+.tableview-images .inCart {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+/* line 358, ../sass/index.sass */
+#search-engine {
+  background-color: #44a6b9;
+  height: 46px;
+  width: 100%;
+}
+/* line 362, ../sass/index.sass */
+#search-engine input {
+  border-radius: 100px;
+  width: 90%;
+  height: 30px;
+  margin: 8px 5%;
+  border: none;
+  text-align: center;
+}
+/* line 369, ../sass/index.sass */
+#search-engine .lupa {
+  background-image: url(../img/lupa.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-size: contain;
+  top: 12px;
+  right: 6%;
+}
+
+/* line 378, ../sass/index.sass */
+.Home li {
+  height: 25%;
+}
+/* line 381, ../sass/index.sass */
+.Home li > a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  display: table;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  font-size: 30px;
+}
+/* line 391, ../sass/index.sass */
+.Home li > a:visited {
+  color: white;
+}
+
+/* line 395, ../sass/index.sass */
+.Offers .tableview-images img {
+  border-color: #ee4f30;
+}
+/* line 397, ../sass/index.sass */
+.Offers li {
+  border-bottom-color: #ee4f30;
+}
+/* line 399, ../sass/index.sass */
+.Offers .no-offers {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 404, ../sass/index.sass */
+.Fav .tableview-images img {
+  border-color: #ffa13f;
+}
+/* line 406, ../sass/index.sass */
+.Fav li {
+  border-bottom-color: #ffa13f;
+}
+
+/* line 410, ../sass/index.sass */
+.Cart .tableview-images img {
+  border-color: #ff6700;
+}
+/* line 412, ../sass/index.sass */
+.Cart li {
+  border-bottom-color: #ff6700;
+}
+/* line 416, ../sass/index.sass */
+.Cart .bottom-container {
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 421, ../sass/index.sass */
+.Cart .bottom-container .buy-total {
+  background-color: #0099b9;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 26px;
+  color: white;
+}
+/* line 429, ../sass/index.sass */
+.Cart .bottom-container .buy-all {
+  display: block;
+  color: white;
+  background-color: #59ceca;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  color: white;
+  background-position: 95% 50%;
+  text-decoration: none;
+}
+
+/* line 443, ../sass/index.sass */
+.products-cell .star {
+  position: absolute;
+  width: 43px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 6px;
+  left: 60px;
+}
+/* line 451, ../sass/index.sass */
+.products-cell .star.on {
+  background-image: url(../img/icon-star-on.png);
+}
+/* line 453, ../sass/index.sass */
+.products-cell .star.off {
+  background-image: url(../img/icon-star-off.png);
+}
+
+/* line 457, ../sass/index.sass */
+.Products .tableview-images img {
+  border-color: #0099b9;
+}
+/* line 459, ../sass/index.sass */
+.Products .tableview-images .star {
+  position: absolute;
+  width: 43px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 6px;
+  left: 60px;
+}
+/* line 467, ../sass/index.sass */
+.Products .tableview-images .star.on {
+  background-image: url(../img/icon-star-on.png);
+}
+/* line 469, ../sass/index.sass */
+.Products .tableview-images .star.off {
+  background-image: url(../img/icon-star-off.png);
+}
+/* line 471, ../sass/index.sass */
+.Products .tableview-images li {
+  border-bottom-color: #44a6b9;
+}
+
+/* line 475, ../sass/index.sass */
+.Payout p {
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+/* line 480, ../sass/index.sass */
+.Payout .cards {
+  height: 50px;
+  background-color: #0099b9;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+/* line 487, ../sass/index.sass */
+.Payout ul {
+  text-align: center;
+}
+/* line 489, ../sass/index.sass */
+.Payout ul li {
+  display: inline-block;
+  padding: 8px;
+  width: 24%;
+}
+
+/* line 495, ../sass/index.sass */
+.Config .content {
+  overflow: auto;
+}
+/* line 497, ../sass/index.sass */
+.Config .content > * {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+/* line 501, ../sass/index.sass */
+.Config .loggout {
+  background-color: #ee4f30;
+}
+/* line 503, ../sass/index.sass */
+.Config h3, .Config h4 {
+  color: white;
+}
+/* line 505, ../sass/index.sass */
+.Config h3 {
+  background-color: #44a6b9;
+}
+/* line 507, ../sass/index.sass */
+.Config h4 {
+  background-color: #59ceca;
+}
+
+/* line 510, ../sass/index.sass */
+.text-danger {
+  background-color: lightpink;
+  color: crimson;
+  padding: 4px;
+  border-radius: 50px;
+}

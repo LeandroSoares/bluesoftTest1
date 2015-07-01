@@ -1,0 +1,28 @@
+<!-- Cart.html -->
+<div class='Config' >
+    <header class='config'> 
+        <h2>{{page.name}}</h2> 
+        <a class="btn btn-menu menu-left" ng-click='openMenu()'></a>
+        <a class="btn btn-back menu-right" ng-click='$back()'></a>
+    </header>
+    
+    <div style='height: {{$fullScreenMinusHeader}}' class='content'> 
+        <h3 class='btn loggout' ng-click='logout()'>LOGOUT</h3>
+        <h3>Créditos</h3>
+        <h4>Design e desenvolvimento</h4>
+        <p>Leandro Silva Soares - leandrogamedesigner@gmail.com</p>
+        <h3>Tecnologias e habilidades utilizadas</h3>
+        <h4>Web</h4>
+        <p>HTML, JS, CSS :)</p>
+        <p>SASS e COMPASS</p>
+        <p>Angular.js</p>
+        <h4>Design</h4>
+        <p>Adobe Illustrator CC</p>
+        <p>Adobe Photoshop CC</p>
+        <h4>Versionamento</h4>
+        <p>Git</p>
+        <h4>Outros</h4>
+        <p>Terminal - MAC OS X</p>
+    </div>
+</div>
+<div id="blackOver" ng-click='closeMenu()'></div>
