@@ -1,4 +1,6 @@
 .DS_Store
-art
+_art
 bower_components
+node_modules
 .sass-cache
+bluesoftTest1.sublime-workspace
